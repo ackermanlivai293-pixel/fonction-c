@@ -1,5 +1,9 @@
 #include <unistd.h>
+void afficher(char c ) 
+{
+	write(1, &c, 1);
+}
 int main(void) {
-  write(1, 'a', 1);
+  afficher('a');
 return (0);
 }
